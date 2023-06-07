@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Settimeout-Setinterval</title>
+        <meta charset ="utf-8">
+		<meta name="description" content=""/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            //setTimeout
+                arro = () => {
+                    var date = new Date();
+                    console.log(date);
+                }
+                setTimeout(arro,1000);
+                
+            //setinterval
+                set = () => {
+                    for(let i=0; i<3; i++){
+                        var date = new Date();
+                        var curr = date.toLocaleString();
+                        console.log(curr);
+                        clearInterval(clear);
+                    }
+                }
+                var clear = setInterval(set,1000);
+        </script>
+    </body>
+</html>
